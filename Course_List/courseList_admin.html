@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="../Content/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Dashdemo.css">
+    <title>Course list</title>
+  </head>
+  <body>
+    
+
+
+    <nav class="navbar navbar-light bg-primary fixed-top flex-md-nowrap p-0 shadow" style="background-color:gray;" >
+        <!-- Navbar content -->
+        <a href="../AdminDashboard/DashboardAdminOverview.html" class="navbar-brand col-sm-3 col-md-2 mr-0">Dashboard </a>
+
+        <!---search box-->
+        
+            <input class="form-control form-control-primary w-100" type="search" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Welcome Admin
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Change Password</a>
+              <a class="dropdown-item" href="../index.html">Log out</a>
+              <!--<a class="dropdown-item" href="#">Something else here</a>-->
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-2 bg-light d-none d-md-block sidebar">
+
+            <div class="left-sidebar">
+
+              <!---side bar-->
+              <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="../AdminDashboard/DashboardAdminOverview.html">Overview</a>
+                </li>
+              
+              
+                <!--  
+                <li class="nav-item">
+                  <a class="nav-link" href="DashboardAdminTeacher.html">Teacher</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="DashboardAdminStudent.html" >Student</a>
+
+                </li>
+                -->
+
+                <li class="nav-item">
+
+                  <div class="dropdown nav-link">
+                    <a class="btn dropdown-toggle" href="../DashboardAdminOverview.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Teachers
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="../RegistrationTeacher.html">Registration</a>
+                      <a class="dropdown-item" href="../Other/404page.html">Edit Profile</a>
+                      <a class="dropdown-item" href="../AdminDashboard/Details/DetailsTeacher.html">Details</a>
+                    </div>
+                  </div>
+
+                </li>
+
+
+
+
+                <li class="nav-item">
+
+                  <div class="dropdown nav-link">
+                    <a class="btn dropdown-toggle" href="DashboardAdminStudent.html" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Students
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="../RegistrationStudent.html">Registration</a>
+                      <a class="dropdown-item" href="../Other/404page.html">Edit Profile</a>
+                      <a class="dropdown-item" href="../AdminDashboard/Details/DetailsStudent.html">Details</a>
+                      <a class="dropdown-item" href="courseList_admin.html">Course</a>
+                    </div>
+                  </div>
+
+                </li>
+
+                
+
+
+
+
+              </ul>
+
+
+
+            </div>
+
+           
+
+          </div>
+           <!---Main-->
+
+           <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+             
+            <h3>Course List</h3>
+
+            <!----#################-->
+
+
+
+            
+              <input class="form-control" id="myInput" type="text" placeholder="Search..">
+              <br>
+              <table class="table table-bordered table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>018546588</td>
+                  </tr>
+                  <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@mail.com</td>
+                    <td>016875698</td>
+                  </tr>
+                  <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@greatstuff.com</td>
+                    <td>01851048555</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                    <td>01534908532</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+             
+            
+
+
+
+           
+            
+
+          </main>
+        </div>
+      </div>
+
+
+      
+    
+
+
+
+
+
+
+
+      
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!---MY table JS -->
+<script src="../jsMy/tablecustom.js"></script>
+
+  </body>
+</html>
